@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/movie-list",
+	"version": "0.1.0",
+	"title": "Movie List",
+	"category": "text",
+	"icon": "format-video",
+	"description": "A Gutenberg block that shows list of movies based on filters like movie director, genre, label and language.",
+	"attributes": {
+		"movieDirector": {
+			"type": "string",
+			"default": ""
+		},
+		"movieLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"movieGenre": {
+			"type": "string",
+			"default": ""
+		},
+		"movieLanguage": {
+			"type": "string",
+			"default": ""
+		},
+		"movieCount": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color" : {
+			"background": true,
+			"text": true
+		}
+	},
+	"textdomain": "movie-library",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

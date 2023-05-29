@@ -1,0 +1,69 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ */
+
+.wp-block-create-block-custom-gutenberg {
+	border-radius: 1rem;
+	max-height: 400px;
+	overflow: hidden;
+
+	div {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+
+		.reverse-content {
+			flex-direction: row-reverse;
+		}
+
+		.post-container {
+			display: flex;
+			padding: 1rem;
+			gap: 2rem;
+			overflow: hidden;
+			max-height: 100%;
+			align-items: center;
+
+			.post-thumbnail {
+				max-height: 100%;
+				max-width: 200px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.5rem;
+
+				button {
+					background-color: rgb(114, 114, 141);
+				}
+
+				img {
+					height: 10%;
+				}
+			}
+
+			.post-details {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 4rem;
+				font-size: 1rem;
+
+				h4,
+				p {
+					margin: 0;
+					padding: 0;
+					border: 1px solid #000;
+				}
+
+				.display-none {
+					display: none;
+				}
+
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

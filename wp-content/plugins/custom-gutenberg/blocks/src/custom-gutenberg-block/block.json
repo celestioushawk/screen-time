@@ -1,0 +1,68 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/custom-gutenberg",
+	"version": "0.1.0",
+	"title": "Custom Gutenberg",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Custom gutenberg block to implement custom posts.",
+	"attributes": {
+		"postSearch": {
+			"type": "string",
+			"default": ""
+		},
+		"postID": {
+			"type": "number",
+			"default": 0
+		},
+		"postTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"postDate": {
+			"type": "string",
+			"default": ""
+		},
+		"postExcerpt": {
+			"type": "string",
+			"default": ""
+		},
+		"postImage": {
+			"type": "number",
+			"default": 0
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"postShowExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"postShowDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"postContentOrientation": {
+			"type": "string",
+			"enum": ["leftright", "rightleft"],
+			"default": "leftright"
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color": {
+			"background": true,
+			"text": true
+		}
+	},
+	"textdomain": "custom-gutenberg",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

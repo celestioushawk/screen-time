@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/single-person",
+	"version": "0.1.0",
+	"title": "Single Person",
+	"category": "text",
+	"icon": "businessman",
+	"description": "A Gutenberg block that shows a person based on search with autocomplete feature.",
+	"attributes": {
+		"personSearch": {
+			"type": "string",
+			"default": ""
+		},
+		"personId": {
+			"type":"number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color" : {
+			"background": true,
+			"text": true
+		}
+	},
+	"textdomain": "movie-library",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

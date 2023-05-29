@@ -1,0 +1,46 @@
+h2 {
+	font-weight: 800;
+	text-decoration: underline;
+}
+
+.movies-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.movie-item img {
+	width: 100%;
+	height: auto;
+}
+
+.movie-item h3 a {
+	font-size: 1rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.movie-item h3 a:hover {
+	text-decoration: underline;
+}
+
+.imdb-movies-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+.imdb-movies-container .imdb-movie img {
+	width: 100%;
+}
+
+.imdb-movies-container .imdb-movie h3 a {
+	font-size: 1rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.imdb-movies-container .imdb-movie h3 a:hover {
+	text-decoration: underline;
+}
